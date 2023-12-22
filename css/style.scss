@@ -99,8 +99,18 @@ header h1 {
   font-size: 3rem;
   font-weight: bold;
 }
-header a:not(.mobiel) {
+
+header a.mobiel {
+  display: inline;
+}
+
+
+header a {
   display: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: black;
 }
 
 header a.mobiel {
@@ -274,6 +284,18 @@ footer ul a {
 }
 
 @media (min-width: 900px) {
+  header nav a{
+    display: inline;
+  }
+
+  header a.mobiel {
+    display: none;
+  }
+
+  header nav {
+    display: inline;
+  }
+
   .overons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
