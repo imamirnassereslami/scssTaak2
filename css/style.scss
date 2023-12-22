@@ -2,7 +2,7 @@
 @use "mixins" as *;
 
 @import url("./reset.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 // @font-face {
 //   font-family: icons;
@@ -18,6 +18,7 @@
 body {
   background-color: $bggrey;
   font-family: Roboto, sans-serif;
+  display: grid;
   * {
     line-height: calc(2px + 2ex + 2px);
   }
@@ -86,3 +87,187 @@ body {
   }
   /* alle kleuren voor dit vlak: #FF715B  #30332E  #62BBC1  #EC058E */
 }
+
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+header a:not(.mobiel) {
+  display: none;
+}
+
+header a.mobiel {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+
+.billboard:first-child {
+  padding: 3rem 2rem;
+  height: 30vh;
+  color: white;
+  background-image: url(images/achtergrond-nacht.png);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.billboard:first-child h2 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+
+.billboard:first-child p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.overons {
+  padding: 3rem 2rem;
+}
+
+.hoofding h2 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hoofding p {
+  font-size: 2rem;
+  font-style: italic;
+  margin-block: 1rem;
+}
+
+.overons h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.overons input {
+  margin-bottom: 1rem;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 2px;
+}
+
+.overons p {
+  line-height: 2.5rem;
+  margin-block: 0.7rem;
+  font-size: 1.2rem;
+}
+
+.hoofding p {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-block: 1rem;
+}
+
+.sectie1 {
+  margin-bottom: 2rem;
+}
+
+.sectie2 {
+  margin-bottom: 2rem;
+}
+.sectie3 {
+  margin-bottom: 2rem;
+}
+
+.billboard:nth-child(3) {
+  padding: 3rem 2rem;
+  height: 30vh;
+  color: white;
+  background-image: url(images/achtergrond-nacht.png);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.billboard:nth-child(3) h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+
+.billboard:nth-child(3) p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.watwedoen .hoofding {
+  padding: 1rem 2rem;
+}
+
+.watwedoen .sectie1,
+.watwedoen .sectie2,
+.watwedoen .sectie3,
+.watwedoen .sectie4 {
+  padding: 1rem 2rem;
+}
+
+.watwedoen h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-block: 1rem;
+}
+
+.watwedoen p {
+  font-size: 1.4rem;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 3rem 2rem;
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin-block: 1rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 1rem;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.figuur1, .figuur2, .figuur3, .figuur4 {
+
+  width: 100%;
+  height: 250px;
+}
+
