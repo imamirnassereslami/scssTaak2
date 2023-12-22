@@ -104,6 +104,10 @@ header a.mobiel {
   display: inline;
 }
 
+header a:not(.mobiel) {
+  display: none;
+}
+
 
 header a {
   display: none;
@@ -284,6 +288,10 @@ footer ul a {
 }
 
 @media (min-width: 900px) {
+  header a:not(.mobiel) {
+    display: inline;
+  }
+  
   header nav a{
     display: inline;
   }
